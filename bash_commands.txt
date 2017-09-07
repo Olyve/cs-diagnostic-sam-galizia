@@ -1,0 +1,9 @@
+1. cd
+2. ls
+3. pwd
+4. touch cookies.txt
+5. mkdir recipes
+6. rm
+7. git add (filename)
+8. git commit -m "Put a message here"
+9. git push origin master

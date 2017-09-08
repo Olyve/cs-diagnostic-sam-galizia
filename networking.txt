@@ -1,0 +1,10 @@
+When you enter that address into a web browser, there are a number of things that happen before you see the page that is displayed. First, your computer will attempt to look up the address that was provided using a DNS, or Domain Name Server. A DNS is a like a giant address book that computers can use to look up the human friendly url's and figure out what IP address is associated with that. If it does not have the IP that was asked for it will pass it along to another DNS that in turn may have it. That process continues until the server is either located or not found.
+
+When the location is found, the DNS routes the request to the server at the address. During the process of transferring the request to the server, the information that contains all that details is broken into packets that are sent "across the wire" to the destination where they are reassembled on the server after they are all received. Once the request is rebuilt the server will attempt to figure out what is being requested from the client.
+
+HTTP verbs are used to tell the server what is being asked of it. Some of the most common verbs are GET, POST, PUT, and DELETE. When you type "http://www.google.com" into your web browser, you are making a GET request. This tells the server that you are requesting it fetch something and display it to you.
+
+Headers are another tool used to tell the server details about a request. Headers can be used to tell the server the format of the data being sent and also what type of data that the client wants returned. This is especially useful when a server can respond with data in different formats like XML or JSON. You want to specify the type you are expecting in the headers of the request.
+
+Once the server knows the action and the route, it will process the request and fetch the information. Once it has the information, it builds a response which is broken down into packets and sent back across the wire to the client.
+When the client receives the response, it assembles all the packets into a proper response and from there it will display the information that was sent back from the server.
